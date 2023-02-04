@@ -1,0 +1,25 @@
+{
+  "name": "address-ac",
+  "version": "1.0.0",
+  "description": "Address autocomplete with Redis",
+  "main": "app.js",
+  "scripts": {
+    "test": "node ./tests/test.js",
+    "start": "node ./app/app.js"
+  },
+  "keywords": [
+    "redis"
+  ],
+  "author": "Joey Whelan",
+  "license": "See LICENSE",
+  "dependencies": {
+    "adm-zip": "^0.5.10",
+    "csv-parse": "^5.3.3",
+    "express": "^4.18.2",
+    "got": "^12.5.3",
+    "JSONStream": "^1.3.5",
+    "redis": "^4.6.2",
+    "unique-names-generator": "^4.7.1"
+  },
+  "type": "module"
+}

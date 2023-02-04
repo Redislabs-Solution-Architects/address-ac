@@ -1,0 +1,12 @@
+[
+    {
+        "province": "NT",
+        "url": "https://www150.statcan.gc.ca/n1/pub/46-26-0001/2021001/ODA_NT_v1.zip",
+        "file": "ODA_NT_v1.csv"
+    },
+    {
+        "province": "PE",
+        "url": "https://www150.statcan.gc.ca/n1/pub/46-26-0001/2021001/ODA_PE_v1.zip",
+        "file": "ODA_PE_v1.csv"
+    }
+]
