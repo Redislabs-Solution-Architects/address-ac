@@ -30,7 +30,11 @@ git clone https://github.com/Redislabs-Solution-Architects/address-ac.git && cd 
 ## Usage <a name="usage"></a>
 ### Server start-up
 ```bash
-docker compose up
+docker compose up -d
+```
+### Server shutdown
+```bash
+docker compose down
 ```
 ### GUI Access
 ```bash
