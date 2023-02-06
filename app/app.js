@@ -5,11 +5,26 @@
 import { createClient } from 'redis';
 import express from 'express';
 import { Worker } from 'worker_threads';
+import path from 'path';
+import {fileURLToPath} from 'url';
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const port = process.env.APP_PORT || 8000;
 const redisUrl = process.env.REDIS_URL || 'redis://localhost:6379';
 var client;
 const app = express();
 app.use(express.json());
+
+/**
+ * Static html/js files
+ */
+app.get('/', async(req, res) => {
+    if (!await client.exists('load-complete')) {
+        res.status(400).send('Data Load in Progress');
+    }
+    else {
+        res.status(200).sendFile(path.join(__dirname,'./public', 'index.html'));
+    }
+});
 app.use(express.static('./app/public'));
 
 /**
