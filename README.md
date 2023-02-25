@@ -1,5 +1,8 @@
 # Redis Address Autocomplete
 
+## Blog
+https://joeywhelan.blogspot.com/2023/02/autocomplete-with-redis-search.html
+
 ## Contents
 1.  [Summary](#summary)
 2.  [Architecture](#architecture)
